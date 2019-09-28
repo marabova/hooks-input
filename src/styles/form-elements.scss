@@ -1,0 +1,36 @@
+@include input-placeholder {
+  color: $dodger-blue-25;
+}
+.signup__inputs {
+  padding-bottom: 11px;
+  border-bottom: 1px solid rgba(33, 14, 74, 0.35);
+  display: flex;
+  position: relative;
+}
+
+.signup__input {
+  display: block;
+  width: 100%;
+  max-width: 530px;
+  text-align: left;
+  border: 0;
+  padding-left: 26px;
+  outline: none;
+  font-size: 32px;
+  line-height: 48px;
+  height: 48px;
+  transition: opacity 0.25s ease-in-out, margin-left 0.25s ease-in 0.5s;
+  caret-color: $light-green;
+  &.signup__input--prefix {
+    padding: 0;
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+.signup__input--description {
+  font-family: "MarkOffcPro", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  margin-top: 28px;
+  color: rgba(33, 14, 74, 0.5);
+}

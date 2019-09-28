@@ -1,0 +1,53 @@
+.signup__li--flag,
+.signup__countries--flag {
+  display: flex;
+  align-items: center;
+  &:before {
+    content: "";
+    width: 51px;
+    height: 36px;
+    display: inline-flex;
+    background-image: url(https://static.dev.monese.com/s/flags/flags_sprite.png);
+    transform: scale(0.47) translate(-22px, 0);
+    background-size: auto;
+  }
+}
+
+.signup__countries--flag,
+.flag {
+  &--uk:before {
+    background-position: 0 0;
+  }
+  &.de:before,
+  &--de:before {
+    background-position: -918px -108px;
+  }
+  &.fr:before,
+  &--fr:before {
+    background-position: -612px -108px;
+  }
+  &.it:before,
+  &--it:before {
+    background-position: -153px -180px;
+  }
+  &.at:before,
+  &--at:before {
+    background-position: -867px 0;
+  }
+  &.pl:before,
+  &--pl:before {
+    background-position: -306px -288px;
+  }
+  &.ro:before,
+  &--ro:before {
+    background-position: -561px -288px;
+  }
+}
+.signup__countries--flag {
+  &.uk:before {
+    background-image: url("../images/flag-uk-25-dp.svg");
+    width: 25px;
+    height: 25px;
+    transform: none;
+  }
+}

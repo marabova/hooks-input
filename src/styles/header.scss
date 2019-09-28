@@ -1,0 +1,45 @@
+header {
+  margin-bottom: 141px;
+  .col {
+    padding-top: 0;
+  }
+}
+
+.languageSwitcher {
+  display: inline-flex;
+  align-items: center;
+  height: 24px;
+  font-size: 14px;
+  line-height: 24px;
+  cursor: pointer;
+  > a {
+    margin: 0 10px 0 9px;
+    color: $dark-inigo;
+    @include opacity(35);
+    font-family: "MarkOffcPro", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  &:before,
+  &:after {
+    content: "";
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    display: inline-block;
+  }
+
+  &:before {
+    background-image: url("../images/icon_flag.svg");
+    width: 17px;
+    height: 17px;
+  }
+  &:after {
+    background-image: url("../images/icon_arrow-down.svg");
+    width: 11px;
+    height: 11px;
+    @include opacity(35);
+  }
+}

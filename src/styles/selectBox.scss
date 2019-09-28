@@ -1,0 +1,60 @@
+.signup__countries--wraper {
+  &.active {
+    ul.signup__countries {
+      display: block;
+      max-height: 200px;
+      overflow: scroll;
+    }
+    .signup__countries--flag:after {
+      transform: rotate(-180deg);
+    }
+  }
+}
+.signup__countries--flag {
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  &:before,
+  &:after {
+    content: "";
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    display: inline-block;
+  }
+  &:after {
+    background-image: url("../images/icon_arrow-down.svg");
+    width: 17px;
+    height: 17px;
+    opacity: 0.35;
+  }
+  .signup__countries--prefix {
+    color: $dark-inigo;
+    display: inline-flex;
+    margin: 0 19px;
+    font-family: "MarkOffcPro", sans-serif;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
+.signup__countries {
+  position: absolute;
+  left: 0;
+  top: 52px;
+  background: $white;
+  width: 100%;
+  text-align: left;
+  box-shadow: $box-shadow;
+  display: none;
+  padding: 10px 20px;
+  z-index: 10;
+  li {
+    margin: 2px 0;
+    font-size: 15px;
+    line-height: 21px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,20 @@
+a {
+  text-decoration: none;
+  line-height: 24px;
+  font-size: 16px;
+  color: $light-blue;
+  text-decoration: none;
+  display: inline-block;
+
+  &.link--logo {
+    background-image: url("../images/full-logo.svg");
+    background-repeat: no-repeat;
+    width: 185px;
+    height: 67px;
+    display: inline-block;
+    margin-top: 32px;
+    > span {
+      visibility: hidden;
+    }
+  }
+}

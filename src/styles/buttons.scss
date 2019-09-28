@@ -1,0 +1,23 @@
+.btn {
+  width: 280px;
+  height: 50px;
+  border-radius: 100px;
+  box-shadow: 0 3px 5px 0 rgba(62, 131, 255, 0.07);
+  background-color: $light-blue;
+  color: $white;
+  font-family: "MarkOffcPro-Medium", sans-serif;
+  line-height: 24px;
+  font-size: 16px;
+  background-image: url("../images/icon_arrow-right.svg");
+  background-size: 25px;
+  background-position: 95% center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  &:disabled {
+    opacity: 0.35;
+  }
+  @include margin(bottom, 24px);
+}

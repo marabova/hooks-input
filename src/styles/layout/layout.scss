@@ -1,0 +1,16 @@
+// Import all the mixins.
+@import "./mixins/bem.scss";
+@import "./mixins/col.scss";
+@import "./mixins/grid.scss";
+@import "./mixins/row.scss";
+@import "./mixins/text.scss";
+// Import all the components.
+@import "./components/grid.scss";
+@import "./components/row.scss";
+@import "./components/col.scss";
+@import "./components/text.scss";
+
+.container {
+  width: 100%;
+  max-width: 1160px;
+}
